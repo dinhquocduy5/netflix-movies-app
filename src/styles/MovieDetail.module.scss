@@ -1,0 +1,113 @@
+.detail {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 38px 0 32px 0;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  color: #e50914;
+  font-size: 17px;
+  cursor: pointer;
+  margin-bottom: 22px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: color 0.18s;
+}
+.backBtn:hover {
+  color: #fff;
+  text-shadow: 0 0 4px #e50914;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+  align-items: center;
+  background: #181818;
+  border-radius: 22px;
+  box-shadow: 0 12px 40px 0 rgba(0,0,0,0.28), 0 2px 8px 0 rgba(0,0,0,0.13);
+  padding: 44px 48px 44px 44px;
+  border: 2.5px solid rgba(229,9,20,0.10);
+  min-width: 600px;
+  max-width: 900px;
+}
+
+.poster {
+  width: 260px;
+  min-height: 390px;
+  border-radius: 14px;
+  object-fit: cover;
+  background: #232323;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+  margin-right: 2px;
+  border: 2.5px solid #222;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  align-items: flex-start;
+  padding-left: 8px;
+}
+
+.meta {
+  color: #e5e5e5;
+  font-size: 1.08rem;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 22px;
+  font-weight: 500;
+}
+
+.genres {
+  margin-bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.genres span {
+  background: #e50914;
+  color: #fff;
+  border-radius: 16px;
+  padding: 4px 14px 3px 14px;
+  font-size: 0.97rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  opacity: 0.92;
+  margin-right: 0;
+  margin-bottom: 2px;
+  box-shadow: 0 1px 4px #e5091440;
+}
+
+.info h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #fff;
+  margin: 0 0 18px 0;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 8px #0008;
+  line-height: 1.18;
+}
+
+.info p {
+  color: #e0e0e0;
+  font-size: 1.13rem;
+  margin-top: 16px;
+  line-height: 1.7;
+  max-width: 98%;
+  text-shadow: 0 1px 2px #0002;
+}
+
+// typo: misspelled property (commented out for realism)
+// .typo-detail {
+//   bakground: #e50914;
+//   font-weigth: 700;
+// }

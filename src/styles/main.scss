@@ -1,0 +1,101 @@
+
+// Button styles
+.button {
+  background: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  margin: 0 6px;
+  transition: background 0.18s, color 0.18s;
+  box-shadow: 0 2px 8px #0002;
+}
+.button:hover, .button.active {
+  background: #fff;
+  color: #e50914;
+  border: 1.5px solid #e50914;
+}
+
+body {
+  margin: 0;
+  background: #181818;
+  min-height: 100vh;
+  color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px 64px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.015em;
+  text-shadow: 0 2px 8px #0008;
+}
+
+a {
+  color: #e50914;
+  text-decoration: none;
+  transition: color 0.18s;
+}
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 4px #e50914;
+}
+
+.netflix-bar {
+  background: #141414;
+  padding: 18px 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-bottom: 2px solid #e50914;
+  margin-bottom: 32px;
+}
+
+.netflix-logo {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: #e50914;
+  letter-spacing: 0.12em;
+  font-family: 'Bebas Neue', 'Inter', Arial, sans-serif;
+  margin-right: 18px;
+  text-shadow: 0 2px 8px #000a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 98vw;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 8px;
+  }
+}

@@ -1,0 +1,21 @@
+.switch {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 6px 18px;
+  border-radius: 16px;
+  border: none;
+  background: #eee;
+  color: #222;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.active {
+  background: #1976d2;
+  color: #fff;
+}

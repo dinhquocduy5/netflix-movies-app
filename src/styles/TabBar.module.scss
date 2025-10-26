@@ -1,0 +1,22 @@
+.tabBar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.tabBtn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #eee;
+  color: #222;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.2s;
+  &.active {
+    background: #1976d2;
+    color: #fff;
+    box-shadow: 0 2px 8px #1976d233;
+  }
+}
