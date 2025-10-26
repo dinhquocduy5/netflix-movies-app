@@ -23,7 +23,7 @@ A simple, clean, and responsive movies web app using React, TypeScript, and The 
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/netflix-movies-app.git
+git clone https://github.com/dinhquocduy5/netflix-movies-app.git
 cd netflix-movies-app
 ```
 
