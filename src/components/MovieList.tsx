@@ -41,27 +41,33 @@ const MovieList: React.FC<MovieListProps> = ({
 
   const navigate = useNavigate();
 
-  useEffect(() => {
+  const fetchData = async (type: string, search: string, page: number) => {
     setError("");
     setShowSkeletons(true);
-    const fetchData = async () => {
-      try {
-        let data;
-        if (search) {
-          data = await searchMovies(search, page);
-        } else {
-          data = await fetchMovies(type, page);
-        }
-        setMovies(data.results || []);
-        setTotalPages(data.total_pages || 1);
-      } catch {
-        setError("Failed to fetch movies.");
-      } finally {
-        setShowSkeletons(false);
+    try {
+      let data;
+      if (search) {
+        data = await searchMovies(search, 1);
+      } else {
+        data = await fetchMovies(type, page);
       }
-    };
-    fetchData();
-  }, [type, search, page]);
+      setMovies(data.results || []);
+      setTotalPages(data.total_pages || 1);
+    } catch {
+      setError("Failed to fetch movies.");
+    } finally {
+      setShowSkeletons(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchData(type, search, page);
+  }, [page]);
+
+  useEffect(() => {
+    setPage(1);
+    fetchData(type, search, 1);
+  }, [type, search]);
 
   const skeletonCount = viewMode === "list" ? 4 : 8;
   if (showSkeletons) {
